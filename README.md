@@ -2,9 +2,11 @@
 Push swap is a high efficiency stack sorting algorithm, the goal is to sort a stack with the smallest number of operations possible.
 
 *You have two stacks, A - which is the stack that needs to be sorted, and B - which is a temporary stack for sorting.*
+<img src="https://github.com/susikohmelo/push_swap/blob/main/readme_files/visualized_sort.gif" height="300" /><br/>
+<sup>Credit to [push_swap_visalizer](https://github.com/o-reo/push_swap_visualizer) for this awesome software to visualize the algorithm
 
 **I've used the most conventional solution at 42 schools - the mechanical turk algorithm.<br/>**
->Oversimplified; whenever stack A has a length of 3 or less it is sorted manually (hard coded - but efficient). Until then, push values from A to B in the order of least operations required to push them near their 'target nodes', that being a value on stack B that is close to the value of the value on stack A you're trying to push from. When stack A has 3 or less values, push the numbers back from B - again always pushing the value that requires the least operations first.
+>Oversimplified; push values from A to B in the order of least operations required to push them near a node on stack B that is similar in value. When stack A has 3 or less values, sort them manually, then push the numbers back from B - again always pushing the value that requires the least operations to reach it's target first.
 
 ### You can perform the following operations:
 | Operation  | Description   |
